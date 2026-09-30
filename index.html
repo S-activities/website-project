@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4eadb">
+  <title>一點好事｜Rotaract</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600&family=Noto+Serif+TC:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="world" aria-label="秘密街道">
+  <div class="sky"></div><div class="sun-glow"></div>
+  <div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
 
+  <section class="street-scene">
+    <div class="distant-hills"></div>
+
+    <div class="building building-left">
+      <div class="roof"></div><div class="window window-one"></div><div class="window window-two"></div>
+    </div>
+    <div class="building building-right">
+      <div class="roof"></div><div class="window window-one"></div><div class="window window-two"></div>
+      <div class="awning"></div>
+    </div>
+
+    <div class="garden">
+      <span class="plant plant-a"></span><span class="plant plant-b"></span><span class="plant plant-c"></span>
+      <span class="flower flower-a"></span><span class="flower flower-b"></span>
+    </div>
+
+    <div class="street">
+      <button class="street-light" id="streetLight" aria-label="街燈">
+        <span class="lamp"></span>
+      </button>
+
+      <button class="rabbit" id="rabbit" aria-label="發現一隻小兔子">
+        <span class="ear ear-left"></span><span class="ear ear-right"></span><span class="rabbit-body"></span>
+      </button>
+
+      <button class="magic-door" id="magicDoor" aria-label="打開神秘的門">
+        <span class="door-frame"></span>
+        <span class="door-panel"><span class="door-symbol">✦</span><span class="door-knob"></span></span>
+      </button>
+
+      <div class="little-sign"><span>有些故事，</span><span>要靠自己發現。</span></div>
+    </div>
+  </section>
+
+  <header class="intro">
+    <p class="eyebrow">A LITTLE WORLD OF GOOD</p>
+    <h1>一起做一點好事，<br>也一起留下故事。</h1>
+    <p class="hint">慢慢走。這裡藏著一些東西。</p>
+  </header>
+
+  <div class="door-message" id="doorMessage" aria-live="polite">
+    <div class="message-card">
+      <button class="close-message" id="closeMessage" aria-label="關閉">×</button>
+      <p class="message-kicker">THE SECRET DOOR</p>
+      <h2>門後面，還有一個世界。</h2>
+      <p>這裡會慢慢放進我們做過的事、遇見的人，還有那些值得留下來的故事。</p>
+      <button class="enter-button" id="enterButton">先看看這扇門</button>
+    </div>
+  </div>
+
+  <div class="discover" id="discover"></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
