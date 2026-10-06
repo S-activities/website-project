@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta name="description" content="湖邊小徑上的兔兔待機互動原型。">
+  <title>湖邊小徑｜兔兔互動 Prototype</title>
+  <link rel="stylesheet" href="css/rabbit-prototype.css">
+</head>
+<body>
+  <main class="walk" aria-label="湖邊小徑上的兔兔">
+    <section class="viewport" aria-label="水彩世界">
+      <img class="world-art" src="assets/homepage/homepage-v01.png" alt="湖畔山景、花屋與石板小徑的水彩風景" fetchpriority="high">
+      <div class="soft-edge" aria-hidden="true"></div>
+      <div class="scene-note" aria-hidden="true">
+        <span class="scene-note__eyebrow">A LITTLE WORLD</span>
+        <span class="scene-note__title">湖邊小徑</span>
+      </div>
+      <div class="rabbit-shadow" aria-hidden="true"></div>
+      <div class="rabbit" id="rabbit" role="img" aria-label="沿著小徑慢慢探索的兔兔">
+        <img class="rabbit-frame is-visible" src="assets/homepage/rabbit-idle-01.png" alt="" draggable="false">
+        <img class="rabbit-frame" src="assets/homepage/rabbit-idle-02.png" alt="" draggable="false">
+        <img class="rabbit-frame" src="assets/homepage/rabbit-idle-03.png" alt="" draggable="false">
+      </div>
+      <p class="walk-hint" aria-hidden="true">慢慢滑動畫面，陪兔兔沿著小徑向遠處走</p>
+      <span class="walk-progress" aria-hidden="true"><i id="walkProgress"></i></span>
+    </section>
+  </main>
+  <script src="js/rabbit-prototype.js" defer></script>
+</body>
+</html>
